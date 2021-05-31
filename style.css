@@ -24,9 +24,9 @@ body {
 
 #wrapper {
     background-color: #fff1e6;
-    width: 70%;
-    min-width: 70rem;
-    height: 88%;
+    width: 60%;
+    min-width: 60rem;
+    height: 75%;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -61,8 +61,8 @@ section > p {
 
 #playerGrid, 
 #computerGrid {
-    min-width: 30rem;
-    min-height: 20rem;
+    min-width: 25rem;
+    min-height: 15rem;
     margin: 1rem;
 }
 
@@ -84,7 +84,7 @@ section > p {
     font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
-    padding: 2.5rem;
+    padding: 2rem;
 }
 
 /* Buttons */
@@ -188,15 +188,15 @@ button:focus {
 #endGamePanel {
     position: absolute;
     font-family: 'Squada One', cursive;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     font-style: italic;
     letter-spacing: 3px;
     text-align: center;
     background-color: #e6b8a2;
-    top: 20%;
+    top: 22%;
     width: 100%;
-    padding: 3.17em 0 5em;
+    padding: 2.5em 0 5em;
 }
 
 #endGamePanel > p {

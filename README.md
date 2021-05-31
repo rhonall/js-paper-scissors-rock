@@ -1,1 +1,1 @@
-# js-paper-scissors-rock
+# JavaScript Practise - Paper Scissors Rock

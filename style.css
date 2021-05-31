@@ -1,0 +1,260 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #b7b7a4;
+    color: #283618;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#wrapper {
+    background-color: #fff1e6;
+    width: 70%;
+    min-width: 70rem;
+    height: 88%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.scores-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 2rem;
+}
+
+section > p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #283618;
+}
+
+.gameGrids {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.grid {
+    background-color: #a5a58d83;
+    border-radius: 5px;
+}
+
+#playerGrid, 
+#computerGrid {
+    min-width: 30rem;
+    min-height: 20rem;
+    margin: 1rem;
+}
+
+#playerGrid {
+    display: grid;
+    place-items: center;
+}
+
+#computerGrid {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#result {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.5em 0;
+    width: 9em;
+    border-radius: 5px;
+    border: 1.5px solid #283618;
+    background-color: rgba(255, 255, 255, 0);
+    color: #283618;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+#restartBtn {
+    position: absolute;
+    top: 10px;
+    right: 1rem;
+    border: 1.5px solid #6b705c;
+    color: #485e30;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+button:hover, 
+button:focus {
+    background-color:#283618;
+    color: #fff1e6;
+}
+
+#restartBtn:hover, 
+#restartBtn:focus {
+    background-color: #6b705c;
+    color: #fff1e6;
+}
+
+/* Loading bar */
+.dots {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.dot:nth-child(1) {
+    background-color: #354f52;
+    animation: twoleft 1s ease-in alternate infinite;
+    transform: translateX(100%);
+}
+
+.dot:nth-child(2) {
+    animation: none;
+    background-color: #84a98c;
+}
+
+.dot:nth-child(3) {
+    background-color: #52796f;
+    transform: translateX(-100%);
+    animation: tworight 0.5s ease-out alternate infinite;
+}
+
+@keyframes twoleft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50%,
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes tworight {
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Show the final result after 10 rounds */
+#endGamePanel {
+    position: absolute;
+    font-family: 'Squada One', cursive;
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: #e6b8a2;
+    top: 20%;
+    width: 100%;
+    padding: 3.17em 0 5em;
+}
+
+#endGamePanel > p {
+    margin-top: 0;
+}
+
+footer {
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 1px;
+}
+
+a {
+    color: #283618;
+}
+
+/* Classes that will add when the buttons are clicked */
+.playerPaper {
+    background-image: url(images/paper\ -\ left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.computerPaper {
+    background-image: url(images/paper\ -\ right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.playerRock {
+    background-image: url(images/rock\ -\ left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.computerRock {
+    background-image: url(images/rock\ -\ right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.playerScissor {
+    background-image: url(images/scissor\ -\ left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.computerScissor {
+    background-image: url(images/scissor\ -\ right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Paper Scissors Rock</title>
+</head>
+<body>
+    <button id="restartBtn">Restart</button>
+    <div id="wrapper">
+        <div id="endGame"></div>
+        <h1 class="title">Rock Paper Scissors</h1>
+        <div class="scores-display">
+            <div>Score: <span id="playerScore">0</span></div>
+            <div>Round: <span id="roundDisplay">10</span></div>
+            <div>Score: <span id="computerScore">0</span></div>
+        </div>
+        <div class="gameGrids">
+            <section>
+                <p>Player</p>
+                <div class="grid">
+                    <div id="playerGrid"></div>
+                </div>
+                    
+            </section>
+            <section>
+                <p>Computer</p>
+                <div class="grid c-grid">
+                    <div id="computerGrid"></div>
+                </div>
+                </div>
+            </section>
+            <section class="buttons">
+                <button class="btn" id="rock">rock</button>
+                <button class="btn" id="paper"> paper</button>
+                <button class="btn" id="scissor">scissor</button>
+            </section>
+            <section id="result"></section>
+
+        </div>
+    </div>
+
+
+    <footer>
+        Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
